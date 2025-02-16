@@ -1,0 +1,11 @@
+version: "3"
+services:
+  telegram-bot:
+    image: node:18 # Node.js 18 versiyasidan foydalanamiz
+    container_name: telegram-bot
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app # Joriy katalogni konteyner ichiga ulash
+    command: sh -c "npm install && node bot.js"
+    restart: always # Bot tushib qolsa, qayta ishga tushadi
+
