@@ -1,6 +1,10 @@
 {
+  "name": "telegram-bot",
+  "version": "1.0.0",
+  "description": "Docker ichida telegram bot",
+  "main": "bot.js",
   "dependencies": {
-    "dotenv": "^16.4.7",
-    "node-telegram-bot-api": "^0.66.0"
+    "node-telegram-bot-api": "^0.61.0"
   }
 }
+
