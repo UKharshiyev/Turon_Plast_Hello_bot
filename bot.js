@@ -1,12 +1,10 @@
-require("dotenv").config();
-const TelegramBot = require("node-telegram-bot-api");
+require('dotenv').config();
+const TelegramBot = require('node-telegram-bot-api');
 
-const token = '7863973371:AAGhTYXyDY9DWz6sVij3r-XMYjGXS3wxZ8U';
+const token = process.env.BOT_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 
 bot.on("message", msg => {
-  console.log(msg); // Guruhdagi barcha xabarlarni terminalda ko'rish
-
     if (msg.new_chat_members) {
         msg.new_chat_members.forEach(user => {
             const chatId = msg.chat.id;

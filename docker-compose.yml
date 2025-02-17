@@ -6,6 +6,6 @@ services:
     working_dir: /usr/src/app
     volumes:
       - .:/usr/src/app # Joriy katalogni konteyner ichiga ulash
-    command: sh -c "npm install && node bot.js"
+    command: sh -c "npm install && npm install dotenv && node bot.js"
     restart: always # Bot tushib qolsa, qayta ishga tushadi
 
