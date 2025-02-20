@@ -2,7 +2,7 @@ version: "3"
 services:
   telegram-bot:
     image: node:18 # Node.js 18 versiyasidan foydalanamiz
-    container_name: telegram-bot
+    container_name: Turon_Plast_Hello_bot
     working_dir: /usr/src/app
     volumes:
       - .:/usr/src/app # Joriy katalogni konteyner ichiga ulash
